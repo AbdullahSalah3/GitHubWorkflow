@@ -10,6 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print welcome
-        run : echo "Welcome to Workflow" 
+        run : echo "Welcome to Workflow"
+
+        
+      - name: Checkout repo
+        uses: actions/checkout@v4.2.2
+        
+
+      - name: List Repo file
+        run: ls -la
+         
   
     
