@@ -1,12 +1,11 @@
+// src/app.js
 function greet(name) {
-
-return 'Hello, ${name}!';
-
+  return `Hello, ${name}!`; // Use backticks for template literal
 }
 
-module.exports = greet; // Ensure function is exporta // If run directly, print output (useful for debuggin
+module.exports = greet; // Export the function
 
+// If run directly, print output (useful for debugging)
 if (require.main === module) {
-
-console.log(greet("World"));
+  console.log(greet("World"));
 }
