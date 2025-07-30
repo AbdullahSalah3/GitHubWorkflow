@@ -1,0 +1,15 @@
+name: Ci Pipeline
+
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  example-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print welcome
+        run : echo "Welcome to Workflow" 
+  
+    
